@@ -1,0 +1,53 @@
+/*
+Colourscheme
+
+Coral and Teal:
+Coral: #FF7F50
+Teal: #008080
+Light Teal: #5BC2A8
+Light Coral: #FFA07A
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1920px;
+    background-color: white;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #008080;
+    color: white;
+}
+
+#page-title {
+    flex-shrink: 0;
+    margin-right: auto;
+}
+
+#nav-list {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid white;
+    flex-shrink: 2;
+}
+
+#nav-list li {
+    list-style: none;
+}
+
+#img-section {
+    width: 100%;
+}
+
+.img-gallery {
+    max-width: 100%;
+}
