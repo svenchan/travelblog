@@ -16,38 +16,79 @@ Light Coral: #FFA07A
 }
 
 body {
+    width: 100%;
     max-width: 1920px;
     background-color: white;
 }
+
+.page-logo {
+    flex-shrink: 0;
+    margin-right: auto;
+    color: #111; 
+    font-family: 'Helvetica Neue', sans-serif; 
+    font-size: 2.4rem; 
+    font-weight: bold; 
+    letter-spacing: -1px; 
+    line-height: 1; 
+    padding: 10px;
+}
+
+.page-title {
+    color: #FFA07A; 
+    font-size: 1.8rem; 
+    font-family: 'Signika', sans-serif; 
+    padding-bottom: 10px; 
+    margin-top: 20px;
+    margin-bottom: 12px;
+    text-indent: 12px;
+}
+
 
 nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #008080;
+    background-image: linear-gradient(#f7e5de 0%, white 20%);
     color: white;
-}
-
-#page-title {
-    flex-shrink: 0;
-    margin-right: auto;
 }
 
 #nav-list {
     display: flex;
     justify-content: space-around;
-    border: 1px solid white;
     flex-shrink: 2;
+    background-image: linear-gradient(#d4dfef, white 40%);
 }
 
 #nav-list li {
     list-style: none;
+    padding: 10px;
+    color: #4c413d;
+    font-family: 'Lucida Sans', Arial, sans-serif; 
+    font-size: 1rem; 
+    line-height: 26px; 
+    justify-self: center;
 }
 
 #img-section {
     width: 100%;
+    margin-top: 10px;
 }
 
 .img-gallery {
+    max-width: 100%;
+    width: 100%;
+}
+
+.blog-section {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.blog-post {
+    width: 100%;
+}
+
+.blog-thumbnail {
     max-width: 100%;
 }
