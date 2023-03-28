@@ -9,13 +9,29 @@
 </head>
 <body>
     <nav>
-        <h1 class="page-logo">The <br> Smallest Step</h1>
+        <h1 class="page-logo"><a href="index.html">The <br> Smallest Step</a></h1>
         <div id="nav-menu">
             <ul id="nav-list">
-                <li>Travel</li>
-                <li>Food</li>
-                <li>About Us</li>
-                <li>Contact</li>
+                <div class="dropdown">
+                    <button class="dropdown-btn">Travel</button>
+                    <div class="dropdown-content">
+                        <a href="/pages/china.html">China</a>
+                        <a href="/pages/hague.html">The Hague</a>
+                        <a href="/pages/mongolia.html">Mongolia</a>
+                        <a href="/pages/rotterdam.html">Rotterdam</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropdown-btn">Food</button>
+                    <div class="dropdown-content">
+                        <a href="/pages/china.html">Asian</a>
+                        <a href="/pages/hague.html">Italian</a>
+                        <a href="/pages/mongolia.html">Dutch</a>
+                        <a href="/pages/rotterdam.html">Baking</a>
+                    </div>
+                </div>
+                <li><a>About Us</a></li>
+                <li><a>Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -26,26 +42,26 @@
     <section class="blog-section">
         
             <div class="blog-post">
-                <img class="blog-thumbnail" src="images/great-wall.jpeg" alt="Great wall of china on green mountains">
-                <h3>History Rich China</h3>
+                <img loading="lazy" class="blog-thumbnail" src="images/great-wall.jpeg" alt="Great wall of china on green mountains">
+                <h3><a>History Rich China</a></h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dapibus turpis non tempus mollis. Donec elementum fringilla enim ut fermentum. </p>
             </div>
     
             <div class="blog-post">
-                <img class="blog-thumbnail" src="images/saint-petersburg.jpeg" alt="Canal in Saint Petersburg with many coloured houses">
-                <h3>Art and Culture in Saint Petersburg</h3>
+                <img loading="lazy" class="blog-thumbnail" src="images/saint-petersburg.jpeg" alt="Canal in Saint Petersburg with many coloured houses">
+                <h3><a>Art and Culture in Saint Petersburg</a></h3>
                 <p>Nulla facilisi. Proin vitae fermentum dolor. Aenean eget elementum velit. Fusce scelerisque aliquet justo non bibendum. Phasellus mattis tortor non metus ultricies, et pretium mi mollis. Morbi aliquet, tellus vitae semper congue, purus felis tempor lorem.</p>
             </div>
     
-            <div class="blog-post">
+            <div loading="lazy" class="blog-post">
                 <img class="blog-thumbnail" src="images/scheveningen-strand.jpeg" alt="Sunny day on very wide beach.">
-                <h3>Beach and City Meet in the Hague</h3>
+                <h3><a>Beach and City Meet in the Hague</a></h3>
                 <p>Nulla facilisi. Proin vitae fermentum dolor. Aenean eget elementum velit. Fusce scelerisque aliquet justo non bibendum. Phasellus mattis tortor non metus ultricies, et pretium mi mollis. Morbi aliquet, tellus vitae semper congue, purus felis tempor lorem, semper tincidunt magna sapien nec nisl.</p>
             </div>
 
-            <div class="blog-post">
+            <div loading="lazy" class="blog-post">
                 <img class="blog-thumbnail" src="images/rotterdam3.jpeg" alt="cube shaped houses.">
-                <h3>Architecture in Rotterdam</h3>
+                <h3><a>Architecture in Rotterdam</a></h3>
                 <p>Nulla facilisi. Proin vitae fermentum dolor. Aenean eget elementum velit. Fusce scelerisque aliquet justo non bibendum. Phasellus mattis tortor non metus ultricies, et pretium mi mollis. Morbi aliquet, tellus vitae semper congue, purus felis tempor lorem, semper tincidunt magna sapien nec nisl.</p>
             </div>
     </section>
