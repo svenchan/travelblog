@@ -35,8 +35,62 @@
                 </ul>
             </div>
         </nav>
-        <section class="img-section">
-            <img class="img-gallery" src="images/great-wall.jpeg" alt="Mongolian mountains">
+        <section class="blog-section">
+            <h3>History Rich China</h3>
+            <p></p>
+
         </section>
+        <section class="img-section">
+            <div class="slideshow-container country-slide">
+                <div class="mySlides fade">
+                    <img class="img-gallery" src="../images/mongolian-mountains.jpeg" alt="Mongolian mountains">
+                    <div class="img-caption-text">The Beauty of Mongolia</div>
+                </div>
+                <div class="mySlides fade">
+                    <img class="img-gallery" src="../images/great-wall.jpeg" alt="Geat wall of China.">
+                    <div class="img-caption-text">Ancient History in China</div>
+                </div>
+                <div class="mySlides fade">
+                    <img class="img-gallery" src="../images/saint-petersburg.jpeg" alt="Art and Culture in Saint Petersburg">
+                    <div class="img-caption-text">Art and Culture in Saint Petersburg</div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <br>
+            <div style="text-align: center;">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </section>
+        <!--javascript for img slider with buttons-->
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        // next previous countrols
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides =
+            document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display ="none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex].className += " active";
+        }
+        
+    </script>
+
     </body>
 </html>
